@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "env": {
+                "PYTHONPATH": "D:/course",
+                "AIRFLOW__CORE__ENABLE_SYMLINKS": "False"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}
