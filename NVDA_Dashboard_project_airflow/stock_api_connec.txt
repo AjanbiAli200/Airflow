@@ -1,0 +1,20 @@
+Connection Id *	
+stock_api
+Connection Type *	
+Connection Type missing? Make sure you've installed the corresponding Airflow Provider Package.
+Description	
+Host	
+https://query1.finance.yahoo.com/
+Schema	
+Login	
+Password	
+Port	
+Extra	
+{
+  	"endpoint":"/v8/finance/chart/",
+  	"headers": {
+    	"Content-Type": "application/json",
+      	"User-Agent": "Mozilla/5.0",
+      	"Accept": "application/json"
+    }
+}

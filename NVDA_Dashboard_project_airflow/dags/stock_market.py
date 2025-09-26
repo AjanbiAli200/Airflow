@@ -38,8 +38,8 @@ def stock_market():
         url = f"{api.host}{api.extra_dejson['endpoint']}"
         print(url)
         response = requests.get(url,headers=api.extra_dejson['headers'])
-        Condition = response.json()['finance']['result'] is None
-        return PokeReturnValue(is_done=Condition, xcom_value=url)
+        condition = response.json()['finance']['result'] is None
+        return PokeReturnValue(is_done=condition, xcom_value=url)
     
     get_stock_prices = PythonOperator(
         task_id = 'get_stock_prices',
